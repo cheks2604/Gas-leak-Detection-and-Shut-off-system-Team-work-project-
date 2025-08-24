@@ -16,7 +16,8 @@ A team project to develop a gas safety system that detects leaks and automatical
 - Solenoid valve  
 - Wireless communication modules
 - Piezoelectric speaker
-
+## Note
+The code is divided into two parts as a transmitter module and receiver module cannot be on the same arduino board and thus should be separated into two, one board for the gas sensor and transmitter module and one for the receiver module and solenoid valve
 ## How It Works
 The primary Arduino reads data from the gas sensor. On detection of a leak, it activates an LED warning and sends a wireless signal to a receiver Arduino. The receiver controls a solenoid valve to shut off the gas pipeline.
 The primary Arduino reads data from the gas sensor. On detection of a leak, it activates an LED warning and sends a wireless signal to a receiver Arduino. The receiver controls a solenoid valve to shut off the gas pipeline.
